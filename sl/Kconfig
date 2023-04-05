@@ -1,0 +1,25 @@
+
+config SL_SL
+	tristate "“sl”"
+	default y
+	---help---
+		Enable the sl app
+
+if SL_SL
+
+config SL_SL_PROGNAME
+	string "Program name"
+	default "sl"
+	---help---
+		This is the name of the program that will be use when the NSH ELF
+		program is installed.
+
+config SL_SL_PRIORITY
+	int "sl task priority"
+	default 100
+
+config SL_SL_STACKSIZE
+	int "sl stack size"
+	default 2048
+
+endif

@@ -1,0 +1,4 @@
+
+ifneq ($(CONFIG_SL_SL),)
+CONFIGURED_APPS += sl
+endif
