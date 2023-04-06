@@ -9,6 +9,6 @@ MODULE = $(CONFIG_SL_SL)
 
 ASRCS =
 CSRCS =
-MAINSRC = sl_main.c
+MAINSRC = sl.c
 
 include $(APPDIR)/Application.mk
